@@ -1,11 +1,9 @@
 import {CITY_ACTIONS} from "../constants"
 
-export function addCity({id, name, temp}) {
+export function addCity(item) {
     return {
         type: CITY_ACTIONS.ADD,
-        id,
-        name,
-        temp
+        item
     };
 }
 
