@@ -1,12 +1,23 @@
-const ADD_CITY = "ADD_CITY"
+import {CITY_ACTIONS} from "../constants"
 
-let id = 0;
-
-export function addCity({name, temp}) {
+export function addCity({id, name, temp}) {
     return {
-        type: ADD_CITY,
-        id: ++id,
+        type: CITY_ACTIONS.ADD,
+        id,
         name,
         temp
+    };
+}
+
+export function updateCity(array) {
+    return {
+        type: CITY_ACTIONS.UPDATE,
+        array
+    }
+}
+
+export function clearCity() {
+    return {
+        type: CITY_ACTIONS.CLEAR,
     };
 }

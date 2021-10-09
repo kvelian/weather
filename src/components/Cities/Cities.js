@@ -1,4 +1,4 @@
-import {CityContainer} from "./city/CityContainer";
+import {CityContainer} from "./City/CityContainer";
 import { useSelector } from 'react-redux'
 
 export const Cities = () => {
