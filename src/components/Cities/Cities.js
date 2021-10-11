@@ -7,7 +7,7 @@ export const Cities = () => {
     return (
         <div className="Cities">
             {cities.map(city => {
-                return <CityContainer key={city.id} city={city}/>
+                return <CityContainer key={city} cityUrl={city}/>
             })}
         </div>
     );

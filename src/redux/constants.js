@@ -1,5 +1,11 @@
-export const CITY_ACTIONS = {
+export const CITIES_ACTIONS = {
     ADD: "ADD_CITY",
     UPDATE: "UPDATE_CITY",
     CLEAR:"CLEAR_CITY"
+}
+
+export const CITY_DETAILS_ACTIONS = {
+    ADD: "ADD_CITY_DETAILS",
+    UPDATE: "UPDATE_CITY_DETAILS",
+    DELETE: "DELETE_CITY_DETAILS"
 }

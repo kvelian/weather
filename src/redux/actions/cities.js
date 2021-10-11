@@ -1,21 +1,21 @@
-import {CITY_ACTIONS} from "../constants"
+import {CITIES_ACTIONS} from "../constants"
 
-export function addCity(item) {
+export function addCity(itemUrl) {
     return {
-        type: CITY_ACTIONS.ADD,
-        item
+        type: CITIES_ACTIONS.ADD,
+        itemUrl
     };
 }
 
 export function updateCity(array) {
     return {
-        type: CITY_ACTIONS.UPDATE,
+        type: CITIES_ACTIONS.UPDATE,
         array
     }
 }
 
 export function clearCity() {
     return {
-        type: CITY_ACTIONS.CLEAR,
+        type: CITIES_ACTIONS.CLEAR,
     };
 }

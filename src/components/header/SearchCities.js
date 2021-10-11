@@ -21,7 +21,7 @@ export const SearchCities = () => {
     )
 
     const addCityOnClick = (item) => {
-        dispatch(addCity(item))
+        dispatch(addCity(item.url))
     }
 
 
