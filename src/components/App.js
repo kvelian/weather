@@ -1,13 +1,50 @@
+import {QueryClient, QueryClientProvider} from 'react-query'
+import {createContext, useState, useMemo} from "react";
+import {ReactQueryDevtools} from 'react-query/devtools'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
+
+import {HomePage} from "./HomePage/HomePage";
+import {CityPage} from "./CityPage/CityPage";
+
 import './App.css';
 
-import {SearchCities} from "./header/SearchCities";
-import {Cities} from "./body/Cities";
+const queryClient = new QueryClient()
+
+
+export const CitiesContext = createContext({
+    cities: {},
+    setCities: () => {},
+});
+
 
 export function App() {
+    const [cities, setCities] = useState([])
+    const value = useMemo(
+        () => ({ cities, setCities }),
+        [cities]
+    );
+
     return (
-        <div className="App">
-            <SearchCities/>
-            <Cities />
-        </div>
+        <QueryClientProvider client={queryClient}>
+            <Router>
+                <CitiesContext.Provider value={value}>
+                    <div className="App">
+                        <Switch>
+                            <Route path="/city/:cityUrl">
+                                <CityPage/>
+                            </Route>
+                            <Route path="/">
+                                <HomePage/>
+                            </Route>
+                        </Switch>
+                    </div>
+                </CitiesContext.Provider>
+            </Router>
+            <ReactQueryDevtools initialIsOpen={true}/>
+        </QueryClientProvider>
     );
 }

@@ -1,0 +1,6 @@
+export const CITIES_ACTIONS = {
+    ADD: "ADD_CITY",
+    UPDATE: "UPDATE_CITY",
+    DELETE: "DELETE_CITY",
+    CLEARALL:"CLEAR_ALL_CITY"
+}
