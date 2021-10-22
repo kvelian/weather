@@ -1,21 +1,29 @@
 import {CITIES_ACTIONS} from "../constants"
 
-export function addCity(itemUrl) {
+export function addCity(cityUrl) {
     return {
         type: CITIES_ACTIONS.ADD,
-        itemUrl
+        cityUrl
     };
 }
 
-export function updateCity(array) {
+export function updateCity(cityUrl, cityObject) {
     return {
         type: CITIES_ACTIONS.UPDATE,
-        array
+        cityUrl,
+        cityObject
     }
 }
 
-export function clearCity() {
+export function deleteCity(cityUrl) {
     return {
-        type: CITIES_ACTIONS.CLEAR,
+        type: CITIES_ACTIONS.DELETE,
+        cityUrl
+    };
+}
+
+export function clearCities() {
+    return {
+        type: CITIES_ACTIONS.CLEARALL,
     };
 }

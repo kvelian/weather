@@ -1,13 +1,14 @@
 import {useQuery} from "react-query";
-import {getCity} from "../../../axios/cities";
 
-import "./city.css"
+import {getCityShort} from "../../../../axios/getCity";
 
-export const CityContainer = ({cityUrl}) => {
-    const {data, isLoading, error} = useQuery(['city', cityUrl], () => getCity(cityUrl),
+import "./cityItem.css"
+
+export const CityItemContainer = ({city}) => {
+    const {data, isLoading, error} = useQuery(['cityShort', city], () => getCityShort(city),
         {
             refetchOnWindowFocus: false,
-            staleTime: Infinity,
+            staleTime: 300000,
             retry: false
         }
     )
@@ -15,10 +16,11 @@ export const CityContainer = ({cityUrl}) => {
     if (isLoading) return <div> Loading... </div>
     if (error) return <div> Error...: {error.message} </div>
 
+
     return (
-        <div className="City">
+        <>
             <label> {data.location.name}, {data.location.country}</label>
             <label> {data.current.temp_c}° C</label>
-        </div>
+        </>
     );
 }
