@@ -10,7 +10,7 @@ import {
 import {HomePage} from "./HomePage/HomePage";
 import {CityPage} from "./CityPage/CityPage";
 
-import './App.css';
+import './App.scss';
 
 const queryClient = new QueryClient()
 

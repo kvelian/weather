@@ -1,7 +1,9 @@
 import {SearchCitySelect} from "./SearchCitySelect/SearchCitySelect";
-import {CityItems} from "./CityItems/CityItems";
+import {Cities} from "./CityItems/Cities";
 import {CitiesContext} from "../App";
 import {useContext} from "react";
+
+import './HomePage.scss'
 
 export const HomePage = () => {
     const {cities, setCities} = useContext(CitiesContext);
@@ -17,9 +19,9 @@ export const HomePage = () => {
     }
 
     return (
-        <div className="HomePage">
+        <div className="HomePage container__column">
             <SearchCitySelect addCity={addCity}/>
-            <CityItems cities={cities} deleteCity={deleteCity}/>
+            <Cities cities={cities} deleteCity={deleteCity}/>
         </div>
     )
 }

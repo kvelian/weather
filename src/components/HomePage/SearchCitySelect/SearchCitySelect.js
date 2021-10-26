@@ -4,6 +4,23 @@ import {useQuery} from "react-query";
 import {getCities} from "../../../axios/getCities";
 import {useClickOutside} from "../../../utils/useClickOutside";
 
+import './searchCitySelect.scss'
+
+const InputContainer = ({value, onChangeInput, onClickInput}) => {
+    return (
+        <div className="SearchCitiesSelect_InputContainer container__row">
+            <div className="icon__s loupe"/>
+            <div className="SearchCitiesSelect_Input container__column">
+                <input className="input" maxLength="40" onChange={onChangeInput}
+                       onClick={onClickInput} value={value}
+                       placeholder="Search your city...">
+                </input>
+                <hr className="line line_underInput line__grey"/>
+            </div>
+        </div>
+    )
+}
+
 export const SearchCitySelect = ({addCity}) => {
     const [cityValue, setInputCityValue] = useState("")
     const [showOptions, setShowOptions] = useState(false)
@@ -35,14 +52,14 @@ export const SearchCitySelect = ({addCity}) => {
     }
 
     return (
-        <div ref={ref} className="SearchCitiesSelect">
-            <input className="SearchCitiesInput" maxLength="40" onChange={onChangeInputCity} onClick={onClickInputCity} value={cityValue}
-                   placeholder="Search your city..."/>
+        <div ref={ref} className="SearchCitiesSelect container__column">
+            <InputContainer value={cityValue} onChangeInput={onChangeInputCity} onClickInput={onClickInputCity}/>
             {showOptions && (
-                <div className="SearchCitiesOptions">
+                <div className="container__column">
                     {data && data.map(item => {
-                        return <div key={item.url} value={item.url}
-                                    onClick={() => addCityOnClick(item)}>{item.name}</div>
+                        return <span className="option" key={item.url}
+                                     value={item.url}
+                                     onClick={() => addCityOnClick(item)}>{item.name}</span>
                     })}
                 </div>
             )}

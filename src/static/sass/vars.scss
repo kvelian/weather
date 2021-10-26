@@ -1,0 +1,83 @@
+/* colors */
+$White: #fff;
+$White10: #FFFFFF19;
+$White30: #FFFFFF4D;
+$White50: #FFFFFF7F;
+$White70: #FFFFFFB2;
+$White80: #FFFFFFCC;
+$White90: #FFFFFFE5;
+
+
+$Grey: #FAFAFA;
+$Grey1: #d5d5d5;
+$Grey3: #B7B7B7;
+$Grey7: #5E5E5E;
+$Grey9: #3b3b3b;
+
+$Violet30: #2109654C;
+
+/* linear colors
+$Yellow: #FFD568;
+$Pink: #E96970;
+$Blue: #4156C5;
+$LightBlue1: #88DAFF;
+$LightBlue: #50ADD7;
+$BlueGrey1: #72ACC6;
+$BlueGrey: #45788F;
+$BlueGrey8: #394069;
+$Violet: #210965;
+$Violet8: #1F1341; */
+
+$OpacityBackground60: 0.6;
+$OpacityBackground: 1;
+
+/* linear */
+.warmDay {
+  background: linear-gradient(98.84deg, rgba(255, 213, 104, $OpacityBackground60) 0%, rgba(233, 105, 112, $OpacityBackground60) 98.63%);
+}
+.warmDay:hover {
+  background: linear-gradient(98.84deg, rgba(255, 213, 104, $OpacityBackground) 0%, rgba(233, 105, 112, $OpacityBackground) 98.63%);
+}
+.coldDay {
+  background: linear-gradient(98.84deg, rgba(136, 218, 255, $OpacityBackground60) 0%, rgba(65, 86, 197, $OpacityBackground60) 98.63%);
+}
+.coldDay:hover {
+  background: linear-gradient(98.84deg, rgba(136, 218, 255, $OpacityBackground) 0%, rgba(65, 86, 197, $OpacityBackground) 98.63%);
+}
+.rainyDay {
+  background: linear-gradient(98.84deg, rgba(114, 172, 198, $OpacityBackground60) 0%, rgba(57, 64, 105, $OpacityBackground60) 98.63%);
+}
+.rainyDay:hover {
+  background: linear-gradient(98.84deg, rgba(114, 172, 198, $OpacityBackground) 0%, rgba(57, 64, 105, $OpacityBackground) 98.63%);
+}
+
+.warmNight {
+  background: linear-gradient(99.09deg, rgba(233, 105, 112, $OpacityBackground60) 0%, rgba(33, 9, 101, $OpacityBackground60) 92.19%);
+}
+.warmNight:hover {
+  background: linear-gradient(99.09deg, rgba(233, 105, 112, $OpacityBackground) 0%, rgba(33, 9, 101, $OpacityBackground) 92.19%);
+}
+.coldNight {
+  background: linear-gradient(98.84deg, rgba(80, 173, 215, $OpacityBackground60) 0%, rgba(33, 9, 101, $OpacityBackground60) 84.76%);
+}
+.coldNight:hover {
+  background: linear-gradient(98.84deg, rgba(80, 173, 215, $OpacityBackground) 0%, rgba(33, 9, 101, $OpacityBackground) 84.76%);
+}
+.rainyNight {
+  background: linear-gradient(98.84deg, rgba(69, 120, 143, $OpacityBackground60) 0%, rgba(31, 19, 65, $OpacityBackground60) 91.44%);
+}
+.rainyNight:hover {
+  background: linear-gradient(98.84deg, rgba(69, 120, 143, $OpacityBackground) 0%, rgba(31, 19, 65, $OpacityBackground) 91.44%);
+}
+
+
+/*$WarmDay: linear-gradient(98.84deg, rgba(255, 213, 104, 1) 0%, rgba(233, 105, 112, 1) 98.63%);
+$ColdDay: linear-gradient(98.84deg, #88DAFF 0%, #4156C5 98.63%);
+$RainyDay: linear-gradient(98.84deg, #72ACC6 0%, #394069 98.63%);
+
+$WarmNight: linear-gradient(99.09deg, #E96970 0%, #210965 92.19%);
+$ColdNight: linear-gradient(98.84deg, #50ADD7 0%, #210965 84.76%);
+$RainyNight: linear-gradient(98.84deg, #45788F 0%, #1F1341 91.44%);*/
+
+$Border: linear-gradient(98.84deg, #FFFFFF19 0%, #0000001A 91.44%);
+

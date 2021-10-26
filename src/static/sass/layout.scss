@@ -1,0 +1,123 @@
+@import "typography";
+@import "vars";
+@import "icons";
+@import "weatherIcons";
+
+body {
+  margin: 0;
+  font-family: 'rubikregular';
+  font-size: calc(5px + 1vmin);
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  min-width: 500px;
+  background-color: $Grey;
+}
+
+
+/* containers */
+.container__row {
+  display: flex;
+  flex-direction: row;
+}
+
+.container__column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* icons */
+.icon__xs {
+  height: 100%;
+  width: 18px;
+  margin-right: 2px;
+
+  background-repeat: no-repeat;
+}
+
+.icon__s {
+  height: 100%;
+  width: 35px;
+  margin-right: 5px;
+
+  background-repeat: no-repeat;
+}
+
+.icon__m {
+  height: 80px;
+  width: 100px;
+
+  background-repeat: no-repeat;
+}
+
+.icon__l {
+  height: 120px;
+  width: 145px;
+
+  background-repeat: no-repeat;
+}
+
+.weather {
+  position: absolute;
+  right: 0;
+}
+
+/* input */
+.input {
+  height: 100%;
+  width: 100%;
+
+  font-family: 'rubikregular';
+  font-size: inherit;
+  color: $Grey7;
+
+  background-color: transparent;
+  border:0;
+}
+
+.input::placeholder {
+  font-family: 'rubiklight';
+  color: $Grey3;
+}
+
+.input:focus{
+  outline: none;
+  color: $Grey9;
+}
+
+
+/* lines */
+.line {
+  width: 100%;
+  margin: 2px 0px 0px 0px;
+}
+
+.line__grey {
+  background-color: $Grey3;
+}
+
+.input:focus ~ .line_underInput{
+  background-color: $Grey7;
+}
+
+
+/* options */
+.option {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 22px;
+  padding-top: 2px;
+
+  color: $Grey7;
+  cursor: pointer;
+}
+
+.option:hover{
+  color: $Grey9;
+  box-shadow: 0px 0px 8px $Grey1;
+}
