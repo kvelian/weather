@@ -7,8 +7,8 @@ import {
     Route
 } from "react-router-dom";
 
-import {HomePage} from "./HomePage/HomePage";
-import {CityPage} from "./CityPage/CityPage";
+import {HomePage} from "./feature/HomePage/HomePage";
+import {CityPage} from "./feature/CityPage/CityPage";
 
 import './App.scss';
 
@@ -32,7 +32,7 @@ export function App() {
         <QueryClientProvider client={queryClient}>
             <Router>
                 <CitiesContext.Provider value={value}>
-                    <div className="App">
+                    <div className="App container__column">
                         <Switch>
                             <Route path="/city/:cityUrl">
                                 <CityPage/>

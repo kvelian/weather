@@ -1,6 +1,6 @@
 import {SearchCitySelect} from "./SearchCitySelect/SearchCitySelect";
-import {Cities} from "./CityItems/Cities";
-import {CitiesContext} from "../App";
+import {Cities} from "./Cities/Cities";
+import {CitiesContext} from "../../App";
 import {useContext} from "react";
 
 import './HomePage.scss'

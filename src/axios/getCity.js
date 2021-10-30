@@ -17,7 +17,7 @@ export const getCityFull = async (value) => {
         params: {
             q: value,
             days: 10,
-            aqi: "yes",
+            aqi: "no",
             alerts: "yes"
         }
     });

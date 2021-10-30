@@ -1,0 +1,23 @@
+.CityWeatherDetailsContainer {
+  width: auto;
+  justify-content: center;
+  padding: 10px;
+}
+
+.CityWeatherDetails_table {
+  width: 400px;
+  height: fit-content;
+  padding: 0px 10px;
+  margin: 10px;
+}
+
+.CityWeatherDetails_table_item {
+  justify-content: space-between;
+  width: auto;
+  height: 30px;
+
+  margin: 10px;
+
+  font-size: 20px;
+  line-height: 30px;
+}

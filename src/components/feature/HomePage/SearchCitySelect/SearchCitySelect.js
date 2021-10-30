@@ -1,15 +1,15 @@
 import {useState, useRef} from "react";
 import {useQuery} from "react-query";
 
-import {getCities} from "../../../axios/getCities";
-import {useClickOutside} from "../../../utils/useClickOutside";
+import {getCities} from "../../../../axios/getCities";
+import {useClickOutside} from "../../../../utils/useClickOutside";
 
 import './searchCitySelect.scss'
 
 const InputContainer = ({value, onChangeInput, onClickInput}) => {
     return (
         <div className="SearchCitiesSelect_InputContainer container__row">
-            <div className="icon__s loupe"/>
+            <div className="icon__m loupe"/>
             <div className="SearchCitiesSelect_Input container__column">
                 <input className="input" maxLength="40" onChange={onChangeInput}
                        onClick={onClickInput} value={value}

@@ -1,0 +1,11 @@
+.CityItem_ActionTitle {
+  justify-content: space-between;
+
+  opacity: 0;
+
+  transition: opacity 400ms;
+}
+
+.CityItem:hover .CityItem_ActionTitle {
+  opacity: 1;
+}

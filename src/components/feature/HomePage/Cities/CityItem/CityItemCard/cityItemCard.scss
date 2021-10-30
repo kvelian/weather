@@ -1,0 +1,42 @@
+.CityItem_Card {
+    position: relative;
+    align-items: center;
+    padding: 10px 15px;
+
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    opacity: 0.7;
+
+    transition: opacity 500ms, box-shadow 500ms, border-radius 200ms;
+}
+
+.CityItem:hover .CityItem_Card {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 10px 10px;
+    opacity: 1;
+}
+
+.CityItem_Card_city {
+    align-content: center;
+    height: 20px;
+}
+
+.CityItem_Card_date {
+    align-items: center;
+    height: 19px;
+
+    font-family: "rubiklight";
+
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.CityItem:hover .CityItem_Card_date {
+    opacity: 1;
+}
+
+.CityItem_Card_label__temp {
+    color: white;
+    margin: 8px 0px;
+    font-size: 27px;
+}

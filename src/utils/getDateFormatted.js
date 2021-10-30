@@ -4,12 +4,10 @@ const timezone = require('dayjs/plugin/timezone')
 dayjs.extend(utc)
 dayjs.extend(timezone)
 
-export const getTimeFormatted = (epoch, tz) => {
-    const date = dayjs.unix(epoch)
-    return dayjs(date).tz(tz).format('hha')
+export const getTimeFormatted = (tz) => {
+    return dayjs().tz(tz).format('hha')
 }
 
-export const getDayFormatted = (epoch, tz) => {
-    const date = dayjs.unix(epoch)
-    return dayjs(date).tz(tz).format('D MMM, dd')
+export const getDayFormatted = (tz) => {
+    return dayjs().tz(tz).format('D MMM, dd')
 }
