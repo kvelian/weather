@@ -1,0 +1,41 @@
+.CityForecastDay {
+  height: auto;
+  min-width: 200px;
+  width: 200px;
+}
+
+.Day {
+  height: 150px;
+  width: auto;
+
+  margin: 15px;
+  border-radius: 10px;
+
+  transition: box-shadow 200ms;
+}
+
+.Day_dayInfo {
+  height: 64px;
+  align-items: center;
+}
+
+.Day_icon {
+  height: 64px;
+  width: 64px;
+}
+
+.Day_weatherInfo {
+  margin-inline: 10px;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100% - 64px);
+}
+
+.Day_weatherInfo_condition {
+  width: 50%;
+  font-size: 15px;
+}
+
+.Day_weatherInfo_temp {
+  text-align: end;
+}
