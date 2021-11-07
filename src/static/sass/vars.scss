@@ -1,0 +1,70 @@
+/* colors */
+$White: #fff;
+$White10: #FFFFFF19;
+$White30: #FFFFFF4D;
+$White50: #FFFFFF7F;
+$White70: #FFFFFFB2;
+$White80: #FFFFFFCC;
+$White90: #FFFFFFE5;
+
+
+$Grey: #FAFAFA;
+$Grey1: #d5d5d5;
+$Grey3: #B7B7B7;
+$Grey7: #5E5E5E;
+$Grey9: #3b3b3b;
+
+$Black10: #0000001A;
+$Black25: #0000003F;
+
+/* borders */
+
+$Border: linear-gradient(135deg, $White30 0%, $Black10 80%);
+
+$BorderWhite: linear-gradient(180deg, transparent 0%, $White50 50%, transparent 100%);
+
+/* backgrounds */
+.day__warm__mono {
+  background: #eb88584D;
+}
+.day__warm {
+  background: linear-gradient(135deg, #d94b52 0%, #eb8858 80%)
+}
+
+.day__cold__mono {
+  background: #4156C54D;
+}
+.day__cold {
+  background: linear-gradient(135deg, #88DAFF 0%, #4156C5 98.63%);
+}
+
+.day__overcast__mono {
+  background: #3940694D;
+}
+.day__overcast {
+  background: linear-gradient(135deg, #72ACC6 0%, #394069 98.63%);
+}
+
+
+.night__warm__mono {
+  background: #2109654D;
+}
+.night__warm {
+  background: linear-gradient(135deg, #E96970 0%, #210965 92.19%);
+}
+
+.night__cold__mono {
+  background: #2109654D;
+}
+.night__cold {
+  background: linear-gradient(135deg, #50ADD7 0%, #210965 84.76%);
+}
+
+.night__overcast__mono {
+  background: #1F13414D;
+}
+.night__overcast {
+  background: linear-gradient(135deg, #45788F 0%, #1F1341 91.44%);
+}
+
+

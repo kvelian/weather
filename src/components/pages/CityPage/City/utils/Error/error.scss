@@ -1,0 +1,16 @@
+.CityItemError_Card {
+  position: relative;
+  align-items: center;
+  padding: 10px 15px;
+
+  border-radius: 10px;
+  opacity: 0.7;
+
+  background-color: #bdbdbd;
+
+  transition: opacity 500ms, box-shadow 500ms, border-radius 200ms;
+}
+
+.CityItemError_ActionTitle {
+  justify-content: space-between;
+}
