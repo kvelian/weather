@@ -2,7 +2,8 @@
 
 Learn React, sass. Doing weather app. 
 
-[Figma](https://www.figma.com/file/GP17VzsG8Zpq6XDcDwLTpZ/Weather).
+[Design in figma](https://www.figma.com/file/GP17VzsG8Zpq6XDcDwLTpZ/Weather).
+[Weather API](https://www.weatherapi.com/)
 
 Cities
 
